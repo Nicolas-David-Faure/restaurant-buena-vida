@@ -2,7 +2,7 @@
   "name": "restaurant",
   "private": true,
   "version": "0.0.0",
-  "homepage":"https://nicolas-david-faure.github.io/restaurant-buena-vida",
+  "homepage":"http://nicolas-david-faure.github.io/restaurant-buena-vida",
   "type": "module",
   "scripts": {
     "dev": "vite",
