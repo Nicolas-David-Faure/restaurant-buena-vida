@@ -1,0 +1,110 @@
+.reservation-form{
+    margin-top: 15px;
+   
+    width: 95%;
+  
+   
+    border-radius: 5px;
+    padding: 15px;
+    display: grid;
+    place-items: center;
+}
+
+.reservation-form_cont{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    font-family: var(--montserrat-letter);
+    width: 95%;
+  
+    align-items: center;
+    padding: 10px;
+    border-radius: 5px;
+   
+}
+.reservation__cont_label-input{
+    margin: 10px 0;
+    background-color: #ffffff1c;
+   
+    border-radius: 5px;
+    box-shadow: 5px 3px 15px black;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+/*Effect degree*/
+.reservation__cont_label-input-0{
+    background: rgb(150,9,9);
+    background: linear-gradient(0deg, rgb(161, 14, 14) 14%, rgb(102, 8, 8) 83%);
+}
+.reservation__cont_label-input-1{
+    background: rgb(175,28,28);
+    background: linear-gradient(0deg, rgba(175,28,28,1) 14%, rgba(150,9,9,1) 83%);
+}
+.reservation__cont_label-input-2{
+    background: rgb(201,50,50);
+    background: linear-gradient(0deg, rgba(201,50,50,1) 14%, rgba(175,28,28,1) 83%);
+}
+.reservation__cont_label-input-3{
+    background: rgb(213,74,74);
+    background: linear-gradient(0deg, rgba(213,74,74,1) 14%, rgba(201,50,50,1) 83%);
+}
+.reservation__cont_label-input-4{
+    background: rgb(228,103,103);
+    background: linear-gradient(0deg, rgba(228,103,103,1) 14%, rgba(213,74,74,1) 83%);
+}
+
+
+
+
+.reservation-form_cont label{
+    font-size: 1.3rem;
+    font-weight: 600;
+    
+   margin-top: 5px;
+    margin-left: 1rem;
+}
+.reservation-form_input {
+    height: 2.5rem;
+    border-radius: 5px;
+    transition: .5s all linear;
+    width: 85%;
+    font-size: 1.4rem;
+    margin-left: 1rem;
+    margin-bottom: .5rem;
+    color: white;
+}
+
+.reservation-form_cont input:focus{
+    outline: none;
+    
+}
+
+.reservation__cont-btn{
+    display: flex;
+
+    justify-content: center;
+    width: 100%;
+}
+.btn-space-around{
+    justify-content: space-around;
+}
+
+.reservation-form button{
+    background-color: var(--reservation-btn);
+    width: 35%;
+    height: 50px;
+    border: none;
+    box-shadow: 2px 5px 15px rgb(0, 0, 0);
+    border-radius: 5px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-top: 10px;
+    cursor: pointer;
+}
+.reservation-form button:hover{
+    background-color:#db6701;
+}
+@media screen and(min-width:1024px){
+    
+}

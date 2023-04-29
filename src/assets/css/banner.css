@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@1&display=swap');
+
+.banner__cont{
+    width: 100%;
+    height: 70vh;
+    background: url('../imagenes/banner.jpg');
+    background-position: center;
+   
+    background-size: cover;
+    background-color: var(--color4);
+
+}
+.banner__cont_2{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.504);
+}
+.banner__cont_title{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+.banner__cont_title_2{
+    background: rgb(161,10,10);
+    background: linear-gradient(330deg, rgba(161,10,10,0.9304096638655462) 23%, rgba(71,10,10,0.969625350140056) 49%);
+    width: 98%;
+    padding: 1rem 0;
+    border-radius: 0 30% 0 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    position: relative;
+        top: 50px;
+}
+.banner__title{
+    font-family: 'Lora', serif;
+    color: rgb(229, 224, 224);
+    text-align: center;
+    font-size: 2.2rem;
+    
+}
+
+.banner__icon{
+    width: 95%;
+    height: 220px;
+    border-radius: 30% 0;
+    display: none;
+}
+h1{
+    background-color: rgba(0, 0, 0, 0.32);
+    width: 60%; 
+}
+h1:nth-child(1){
+    padding-top: .5rem;
+    border-radius: 15px 15px 0 0px;
+}
+.banner__slogan{
+    
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    font-family: 'Instrument Serif', serif;
+    color: rgb(227, 196, 196);
+    background-color: rgba(0, 0, 0, 0.32);
+    width: 80%;
+    border-radius: 0 0 15px 15px;
+    padding: 1rem 0;
+    margin-top: 5px;
+}
+@media screen and(min-width: 360px) {
+    .banner__cont_title-2{
+        top: 0px;
+    }
+}
+@media screen and (min-width: 590px) {
+    .banner__icon{
+        display: block;
+        position: absolute;
+        display: block;
+        left: 2%;
+        top: 2%;
+        width: 150px;
+        height: 150px;
+        border-radius: 30% 0;
+    }
+    .banner__cont_title_2{
+        position: relative;
+        top: 150px;
+        width: 90%;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .banner__icon{
+        display: block;
+        position: absolute;
+        display: block;
+        left: 2%;
+        top: 2%;
+        width: 150px;
+        height: 150px;
+        border-radius: 30% 0;
+    }
+    .banner__cont_title_2{
+        position: relative;
+        top: 150px;
+        width: 80%;
+    }
+}
+@media screen and (min-width: 1200px) {
+    
+        .banner__cont_title{
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            
+            
+        }
+        .banner__cont_title_2{
+            background-color: rgba(73, 81, 81, 0.675);
+            width: 50%;
+            
+            padding: 3rem 0;
+            border-radius: 0 30% 0 30%;
+            top: 0;
+            box-shadow: inset 5px 5px 15px rgb(156, 18, 18);
+        }
+        .banner__title{
+            font-family: 'Lora', serif;
+            color: rgb(209, 209, 209);
+            text-align: center;
+            font-size: 2.5rem;
+        }
+        .banner__slogan{
+           
+            font-size: 1.5rem;
+            text-transform: uppercase;
+            font-family: 'Instrument Serif', serif;
+            color: rgb(227, 196, 196);
+            background-color: rgba(0, 0, 0, 0.32);
+            width: 80%;
+            border-radius: 0 0 15px 15px;
+            padding: 1rem 0;
+        }
+        .banner__icon{
+            position: absolute;
+            display: block;
+            left: 2%;
+            top: 2%;
+            width: 150px;
+            height: 150px;
+            border-radius: 30% 0;
+        }
+}

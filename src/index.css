@@ -1,0 +1,33 @@
+  @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,500;1,600&family=Montserrat:wght@200;400;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,700&family=Source+Sans+Pro:ital@0;1&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Alkatra&display=swap');
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  --color1:#db5643;
+  --color2:#1c0f0e;
+  --color3:#70aa87;
+  --color4:#9fb38f;
+  --color5:#c5bd99;
+  --colorText: rgb(190, 187, 187);
+  --colorText2:rgb(224, 221, 221);
+  --background-2: rgba(110, 8, 8, 0.737);
+  --background-3:rgb(77, 15, 15);
+  --montserrat-letter:'Montserrat', sans-serif;
+  --color-background-subtitle: rgba(0, 0, 0, 0.533);
+
+  --background-resevation-2: #581c0b;
+  --reservation-btn: #FF5B2E;
+  --background-grandient: linear-gradient(330deg, rgba(88,11,11,0.9304096638655462) 23%, rgba(138,21,21,0.969625350140056) 49%);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+body{
+  background: rgb(68,68,68);
+  background: linear-gradient(0deg, rgb(42, 31, 31) 14%, rgb(38, 10, 10) 83%);
+}

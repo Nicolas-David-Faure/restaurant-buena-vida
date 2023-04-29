@@ -1,0 +1,183 @@
+.ReservationDietaryRestriction__main{
+    margin: 15px 0;
+    height: 300px;
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url("../../../../assets/imagenes/Reservation/restrictionDiet.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #00000078;
+    overflow: hidden;
+    position: relative;
+}
+
+.ReservationDietaryRestriction__cont_description{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+}
+
+.ReservationDietaryRestriction__cont_inputs{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+
+}
+.ReservationDietaryRestriction_label{
+    margin: 10px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    background-color: rgb(158, 101, 60);
+    border-radius: 5px;
+    padding:5px 10px;
+    
+}
+
+.ReservationDietaryRestriction_label input{
+    width: 20px;
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+.ReservationDietaryRestriction__cont-hasRestioction{
+    margin-top: 15px;
+    max-width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    
+    
+}
+ .ReservationDietaryRestriction__hasRestioction_cont-input{
+    height: 150px;
+    width: 100%;
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(171, 171, 171, 0.437);
+    margin-top: 10px;
+    padding-top: 5px;
+    border-radius: 5px;
+    
+ }
+ .ReservationDietaryRestriction__hasRestioction_cont-input::-webkit-scrollbar{
+    appearance: none;
+
+    border-radius: 5px;
+ }
+ .ReservationDietaryRestriction__hasRestioction_cont-input::-webkit-scrollbar:vertical{
+    width: 5px;
+    height: 5px;
+    background-color: rgba(0, 255, 255, 0);
+ }
+ .ReservationDietaryRestriction__hasRestioction_cont-input::-webkit-scrollbar-thumb{
+    width: 5px;
+    height: 5px;
+   
+    background-color: rgb(208, 208, 208);
+    border-radius :5px; 
+ }
+.ReservationDietaryRestriction__hasRestioction_input{
+    margin: 0;
+    width: 80%;
+    height: 20px;
+    border-radius: 4px;
+    background-color: rgba(87, 31, 31, 0.42);
+    font-size :20px;
+    color: rgb(230, 228, 228);
+    text-align: center;
+}
+.ReservationDietaryRestriction__hasRestioction_input::placeholder{
+    color: rgba(230, 228, 228, 0.65);
+    font-size: 15px;
+}
+.ReservationDietaryRestriction__cont-hasRestioction  ul{
+    max-width: 360px;
+    display: flex;
+    flex-direction: column;
+    width:95%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.ReservationDietaryRestriction__cont-hasRestioction li{
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    background-color: rgba(96, 51, 42, 0.824);
+    border-radius: 5px;
+    width: 80%;
+    margin: 5px 0;
+    padding: 5px 0;
+    list-style: none;
+    text-align: start;
+    position: relative;
+}
+.ReservationDietaryRestriction__cont-hasRestioction li p{
+   margin-right: 5px;
+}
+.ReservationDietaryRestriction__cont-hasRestioction button{
+    background-color: #7c2d17;
+    cursor: pointer;
+    width: 30%;
+    height: 40px;
+    margin-bottom: 10px;
+    color:rgb(140, 134, 134);
+}
+
+
+.ReservationDietaryRestriction__cont-hasRestioction button:active{ 
+    background-color: #7b321e !important;
+}
+
+.ReservationDietaryRestriction__xIcon{
+    position: relative;
+    float: right;
+    width: 40px;
+}
+@media screen and (min-width: 200px){
+     .ReservationDietaryRestriction__cont-hasRestioction button{
+        width: 150px;
+     }
+    .ReservationDietaryRestriction__cont-hasRestioction{
+        width: 300px;
+       
+    }
+}
+@media screen and (min-width: 340px){
+    
+}
+@media screen and (min-width: 420px){
+    .ReservationDietaryRestriction__cont-hasRestioction{
+        width: 80%;
+    }
+}
+@media screen and (min-width: 850px){
+    .ReservationDietaryRestriction__main{
+        margin: 0;
+        height: 320px;
+    }
+    .ReservationDietaryRestriction__cont_description-h4{
+        margin: 0;
+    }
+}
+@media screen and (min-width: 1024px){
+    .ReservationDietaryRestriction__cont_description-h4{
+        margin: 20px;
+    }
+}

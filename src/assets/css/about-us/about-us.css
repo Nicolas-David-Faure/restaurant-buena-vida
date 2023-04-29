@@ -1,0 +1,107 @@
+.AboutUs{
+   
+    width: 100%;
+    font-family: var(--montserrat-letter);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.aboutUs__cont_title{
+    width: 100%;
+    height: 5rem;
+    background-color: var(--background-2);
+    display: grid;
+    place-items: center;
+}
+.aboutUs__cont_title h2{
+    font-family: 'Lora', serif;
+    color: var(--colorText);
+    font-size: 2rem;
+}
+.AboutUs__title_description{
+    width: 97%;
+    margin-top: .3rem;
+    height: 2.5rem;
+    color: var(--colorText);
+    background-color: var(--background-2);
+   display: flex;
+   justify-content: center;
+   cursor: pointer;
+}
+.AboutUs__title_description img {
+    width: 3rem;
+}
+
+.aboutUs__cont_description{
+   width: 95%;
+   height: 90%; 
+   background: rgb(87,47,44);
+   background: linear-gradient(0deg, rgba(87,47,44,1) 9%, rgba(219,86,67,1) 83%);
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   margin-top: 5px;
+}
+.aboutUs__cont_description p{
+    font-size: 1.3rem;
+    color: white;
+    margin: 1rem 0.5rem;
+    text-align: center;
+    background-color: var(--background-2);
+    padding: 15px;
+    line-height: 1.7;
+    font-weight: 500;
+    text-shadow: 5px 5px 15px black;
+    box-shadow: 2px 5px 15px black;
+    border-radius: 5px;
+}
+.aboutUs__description_button{
+    width: 80%;
+    background-color: var(--reservation-btn);
+    border-radius: 5px;
+    height: 4rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: black;
+    cursor: pointer;
+    border: none;
+    box-shadow: 5px 5px 10px black;
+    margin-bottom: 15px;
+}
+
+/*Staff*/
+
+
+
+.AboutUs__cont_staff p{
+    font-size: 1.3rem;
+    color: white;
+    margin: 1rem 0.5rem;
+    text-align: center;
+    background-color: var(--background-2);
+    padding: 15px;
+    line-height: 1.7;
+    font-weight: 500;
+    text-shadow: 5px 5px 15px black;
+    box-shadow: 2px 5px 15px black;
+    border-radius: 5px;
+}
+.AboutUs__cont_staff{
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: rgb(87,47,44);
+    background: linear-gradient(0deg, rgba(87,47,44,1) 9%, rgba(219,86,67,1) 83%);
+    border-radius: 5px;
+    
+}
+
+.AboutUs__cont_staff_description{
+    width: 100%;
+   display: flex;
+ 
+    cursor: grab;
+    height: 350px;
+    overflow: hidden;
+}

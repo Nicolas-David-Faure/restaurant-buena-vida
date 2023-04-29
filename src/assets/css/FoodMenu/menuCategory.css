@@ -1,0 +1,125 @@
+.cont_category{
+
+   
+    width: 100%;
+  
+    min-height: 100vh;
+    background-color: var(--color2);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  
+}
+/*Button*/
+.category_btn_back{
+    position: relative;
+    float: left;
+    width: 90%;
+    height: 90px;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 10px ;
+    box-shadow: 5px 5px 10px black;
+    background-color: rgba(110, 8, 8, 0.737);
+    transition: all ease-in .2s;
+    cursor: pointer;
+}
+.category_btn_back:active{
+    box-shadow: 5px 5px 10px rgb(50, 40, 40);
+    background-color: rgba(154, 20, 20, 0.849);
+}
+.category_btn_back:hover{
+    box-shadow: 5px 5px 10px rgb(50, 40, 40);
+    background-color: rgba(154, 20, 20, 0.849);
+}
+
+.category_btn_back h3{
+    font-size:1.3rem;
+    color: var(--colorText);
+    font-family: 'Montserrat', sans-serif;
+}
+
+.foodCategory_btn-back{
+    width: 100%;
+    height: 100%;
+}
+
+.category__ul{
+    min-height: 80vh;
+    
+    width: 100%;
+
+    margin: 0;
+    padding: 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.category__li{
+    list-style: none;
+    border: 1px solid black;
+    width: 80%;
+    height: 5rem;
+    border-radius: 5px;
+    user-select: none;
+    cursor: pointer;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    box-shadow: 5px 5px 10px black;
+    transition: all ease .2s;
+}
+.category__li:hover{
+    transform: scale(1.01);
+    box-shadow: 5px 5px 10px rgb(50, 40, 40);
+}
+.category__div{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    place-content: center;
+    border-radius: 5px;
+    background-color: #0000006c;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+    font-style: italic;
+    color: var(--colorText);
+    font-weight: 600;
+
+}
+/*FOOD CATEGORY*/
+
+.li__pastas{
+    background-image: url('../../imagenes/pastas.jpg');
+}
+.li__carnes {
+    background-image: url('../../imagenes/meat.jpg');
+}
+.li__pizzas{
+    background-image: url('../../imagenes/pizza.jpg')
+}
+.li__sanguches{
+    background-image: url('../../imagenes/burguer.jpg')
+}
+.li__postres {
+    background-image: url('../../imagenes/brownies.jpg')
+}
+
+
+/*DRINKS CATEGORY*/
+.li__vinos{
+    background-image: url('src/assets/imagenes/drinks/vinos.jpg');
+}
+.li__cervezas{
+     background-image: url('src/assets/imagenes/drinks/beer.jpg');
+}
+.li__tragos{
+     background-image: url('src/assets/imagenes/drinks/martini.jpg');
+}
+.li__gaseosas{
+     background-image: url('src/assets/imagenes/drinks/gaseosa.png');    
+}

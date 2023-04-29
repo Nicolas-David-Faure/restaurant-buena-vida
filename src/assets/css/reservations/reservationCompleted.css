@@ -1,0 +1,27 @@
+.Reservation__completed{
+    width: 100%;
+    border: 1px solid rgba(0, 0, 0, 0.389);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.Reservation__completed h4{
+    font-size: 1.4rem;
+    text-align: center;
+}
+.Reservation__completed button{
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    background-color: rgb(122, 188, 61);
+}  
+.Reservation__completed img{
+    width: 60px;
+    margin: 0;
+}

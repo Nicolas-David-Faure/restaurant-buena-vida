@@ -1,0 +1,122 @@
+
+
+h2, h1, p,h3{
+    margin: 0;
+    padding: 0;
+}
+
+.menu-details__ul{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.menu-details__h1{
+    margin-top: 5px;
+    text-align: center;
+    color: rgb(200, 196, 196);
+    font-size: 2rem;
+    font-weight: 400;
+    text-decoration: underline rgb(200, 196, 196);
+    font-family: 'Alkatra', cursive;
+    background: rgb(88,11,11);
+    background: linear-gradient(330deg, rgba(88,11,11,0.9304096638655462) 23%, rgba(138,21,21,0.969625350140056) 49%);
+    width: 100%;
+}
+
+.details__cont{
+    width: 100%;
+    min-width: 95vw;
+   
+ 
+    border: 1px solid black;
+    margin: 0;
+    padding: 0;
+    
+    margin: 10px 0 ;
+    border-radius: 5px;
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+
+.details__cont-2{
+    width: 100%;
+   
+    border-radius: 5px;
+    color: var(--colorText);
+    background-color: rgba(0, 0, 0, 0.371);
+    margin: 0;
+}
+
+.details__name{
+  color: var(--colorText2);
+    text-align: center;
+    text-decoration: underline white ;
+    text-shadow: 5px 5px 5px rgb(114, 113, 113);
+    font-size: 1.5rem;
+}
+.details__cont-p{
+    width: 100%;
+    min-height: 170px;
+    height: 81%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
+   
+}
+.details__cont-p p, h3{
+    margin-left: 10px;
+}
+.details__cont-p p{
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--colorText2);
+}
+.details__cont-p p span{
+    font-size: 1.1rem;
+    font-weight: 500;
+
+}
+
+.details__cont-price{
+    width: 100%;
+    position: relative;
+}
+
+
+.details__price{
+    float: right;
+    margin-right: 10%;
+}
+@media screen and (min-width: 512px){
+    .details__cont{
+        width: 90%;
+        min-width: 90vw;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .details__cont{
+        width: 80%;
+        min-width: 80vw;
+        
+    }
+}
+
+
+@media screen and (min-width: 1200px) {
+    .details__cont{
+        width: 70%;
+        min-width: 70vw;
+        min-height:100px;
+    }
+    
+}

@@ -1,0 +1,82 @@
+.MenuSectios{
+    width: 80%;
+    height: 40vh;
+
+    gap: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+
+    transition: all ease-in 0.2s;
+    border-radius: 5px;
+  
+    box-shadow: 5px 5px 15px rgb(58, 43, 43);
+
+  
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.MenuSectios:nth-child(1){
+    background-image: url('../../imagenes/pizza.jpg') ;
+}
+.MenuSectios:nth-child(2){
+    background-image: url('../../imagenes/martini.jpg') ;
+}
+
+.menuSections__cont{
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.471);
+    display: grid;
+    place-items: center;
+    filter: drop-shadow(-1px 6px 3px rgba(0, 0, 0, 0.5));
+}
+.menuSections__cont_title{
+    clip-path: polygon(10% 50%, 0 0, 60% 0, 100% 50%, 60% 100%, 0 100%);
+    width: 50%;
+    height: 40%;
+    background: rgb(60,60,60);
+    background: linear-gradient(142deg, rgba(60,60,60,0.5018382352941176) 14%, rgba(213,65,65,0.9304096638655462) 71%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+.menuSections__cont_title h2{
+    color: rgb(190, 187, 187);
+}
+
+.MenuSectios:hover{
+    transform: scale(1.01);
+}
+
+.MenuSectios:active{
+    
+    transition: background-color linear 1s;
+    background: rgb(83,249,199);
+    background: linear-gradient(0deg, rgba(83,249,199,1) 29%, rgba(238,181,181,0.9528186274509804) 68%);
+};
+
+
+@keyframes clickSection {
+    0%{
+        background: rgb(110,86,75);
+        background: linear-gradient(0deg, rgba(110,86,75,1) 22%, rgba(215,132,132,0.9528186274509804) 64%); 
+    }
+    100%{
+        background: rgb(249,135,83);
+        background: linear-gradient(0deg, rgba(249,135,83,1) 29%, rgba(238,181,181,0.9528186274509804) 68%);
+    }
+}
+
+@media screen and (min-width:1200px) {
+  .MenuSectios{
+    width: 40%;
+    height: 50vh;
+    
+  }
+    
+}
