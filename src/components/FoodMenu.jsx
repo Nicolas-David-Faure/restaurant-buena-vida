@@ -25,6 +25,7 @@ const FoodMenu =()=>{
     }
    }
     const comeBack=()=>{
+        //console.log()
         setShowCategory("")
     }
     return(
