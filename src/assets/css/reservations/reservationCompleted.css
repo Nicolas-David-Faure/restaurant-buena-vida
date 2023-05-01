@@ -1,27 +1,42 @@
 .Reservation__completed{
-    width: 100%;
     border: 1px solid rgba(0, 0, 0, 0.389);
     border-radius: 5px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
+    background-color: rgba(139, 125, 95, 0.771);
+    background-image: url('../../imagenes/Reservation/reservation-completed-2.jpg') ;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    overflow: hidden;
 }
 .Reservation__completed h4{
-    font-size: 1.4rem;
+    font-size: 1.5rem;
     text-align: center;
+    font-weight: 500;
+    
+
 }
 .Reservation__completed button{
-    width: 60px;
-    height: 60px;
-    border-radius: 100%;
-    display: flex;
+    box-shadow: 5px 5px 10px black;
+    display:flex;
     align-items: center;
     justify-content: center;
     margin-bottom: 20px;
-    background-color: rgb(122, 188, 61);
+    background-color: rgba(122, 188, 61, 0.678);
 }  
 .Reservation__completed img{
+    margin-left: 3px;
     width: 60px;
     margin: 0;
+}
+
+@media screen and (min-width:220px) {
+    .Reservation__completed{
+        width: 100%;
+        height: 300px;
+    }
 }
