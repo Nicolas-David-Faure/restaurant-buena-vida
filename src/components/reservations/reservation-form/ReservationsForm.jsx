@@ -7,7 +7,7 @@ import ReservationPhaseThree from './ReservationPhaseThree.jsx';
 import ReservationCompleted from './ReservationCompleted.jsx';
 const ReservationsForm = () => {
 
-  const [counterPhase, setCounterPhase] = useState(2);
+  const [counterPhase, setCounterPhase] = useState(0);
   const [reservationCompleted, setReservationCompleted] = useState()
 
   /*USE STATES phase 1*/ 

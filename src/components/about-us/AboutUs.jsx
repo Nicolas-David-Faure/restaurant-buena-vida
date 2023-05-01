@@ -5,11 +5,12 @@ import personal from '../../data/staff.js'
 import descriptionAboutus from '../../data/descriptionAboutUs.js'
 import AboutUsLocation from './AboutUsLocation'
 
-import { motion , animate  } from 'framer-motion'
+import { motion , AnimatePresence  } from 'framer-motion'
 import arrowUp  from '../../assets/svg/arrow-up.svg'
 import  arrowDown from '../../assets/svg/arrow-down.svg'
 
 const AboutUs = () => {
+  const descriptionRef = useRef()
   const [conunterDescripcionIndex, setCounterDescriptionIndex] = useState(0) 
   const [ countIndexStaff,setCountIndexStaff] = useState(0)
   const [displayDescription, setDisplayDescription] = useState(false)
@@ -37,6 +38,26 @@ const AboutUs = () => {
     setCounterDescriptionIndex(0)
   }
  } 
+  
+ const showDescriptionVariants = {
+  open:{
+    display:"flex",
+    opacity:1,
+    y:0,
+      transition:{
+        duration: 1,
+        type: "spring",
+        bounce:0.5
+     }},
+  closed:{
+    opacity:0,
+    y:100,
+      transition:{
+        duration: 1,
+        type: "spring",
+        bounce:0.5,
+     }}}
+  
 
   return (
     <section className='AboutUs'>
@@ -46,13 +67,17 @@ const AboutUs = () => {
       <div className='AboutUs__title_description' onClick={()=>setDisplayDescription(()=>!displayDescription)} >
         <h2>Descripcion</h2><img src={displayDescription ? arrowUp : arrowDown}/>
       </div>
-     
-      <motion.div 
+ 
+      <motion.div
+      ref={descriptionRef} 
       layout
-      initial={{opacity: 0, scale: 0.5}}
-      animate={{opacity:1, scale: 1}}
-      transition={{duration: .5}}
-      style={displayDescription ? { display:'flex'} : {display: "none"}}
+      initial={{
+        opacity: 0,
+        y:"-100px"
+      }}
+      animate={displayDescription ? "open" : "closed"}
+      variants={showDescriptionVariants}
+     
       className='aboutUs__cont_description'>
 
         <p>
@@ -66,6 +91,7 @@ const AboutUs = () => {
      
       
       </motion.div>
+  
       <div className='AboutUs__title_description' onClick={()=>setDisplayStaff(()=>!displayStaff)} >
         <h2>Personal</h2><img src={displayStaff ? arrowUp : arrowDown}/>
       </div>
