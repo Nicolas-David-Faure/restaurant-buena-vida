@@ -1,5 +1,4 @@
 .AboutUs{
-   
     width: 100%;
     font-family: var(--montserrat-letter);
     display: flex;
@@ -9,10 +8,11 @@
 .aboutUs__cont_title{
     width: 100%;
     height: 5rem;
-    background-color: var(--background-2);
+    background: var(--background-grandient);
     display: grid;
     place-items: center;
     user-select: none;
+ 
 }
 .aboutUs__cont_title h2{
     font-family: 'Lora', serif;
@@ -23,55 +23,31 @@
 }
 .AboutUs__title_description{
     width: 97%;
-    margin-top: .3rem;
+    margin-top: 1rem;
     height: 2.5rem;
     color: var(--colorText);
-    background-color: var(--background-2);
-   display: flex;
-   justify-content: center;
-   cursor: pointer;
+    background: rgb(171,22,22);
+    background: linear-gradient(0deg, rgba(171,22,22,1) 15%, rgba(70,6,6,1) 85%);
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+}
+.AboutUs__title_description:nth-child(3){
+    background: rgb(226,80,80);
+    background: linear-gradient(0deg, rgb(204, 33, 33) 15%, rgba(171,22,22,1) 70%);
+    width: 94%;
+}
+.AboutUs__title_description:nth-child(5){
+    background: rgb(251,119,119);
+background: linear-gradient(0deg, rgb(220, 54, 54) 15%, rgb(204, 33, 33) 70%);
+    width: 92%;
+  
 }
 .AboutUs__title_description img {
     width: 3rem;
 }
 
-.aboutUs__cont_description{
-   width: 95%;
-   height: 90%; 
-   background: rgb(87,47,44);
-   background: linear-gradient(0deg, rgba(87, 47, 44, 0.566) 9%, rgba(219, 87, 67, 0.459) 83%);
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-   margin-top: 5px;
-   box-shadow: 5px 5px 10px black;
-}
-.aboutUs__cont_description p{
-    font-size: 1.3rem;
-    color: white;
-    margin: 1rem 0.5rem;
-    text-align: center;
-    background-color: var(--background-2);
-    padding: 15px;
-    line-height: 1.7;
-    font-weight: 500;
-    text-shadow: 5px 5px 15px black;
-    box-shadow: 2px 5px 15px black;
-    border-radius: 5px;
-}
-.aboutUs__description_button{
-    width: 70%;
-    background-color: var(--reservation-btn);
-    border-radius: 5px;
-    height: 3rem;
-    font-size: 1.5rem;
-    font-weight: 600;
-    color: black;
-    cursor: pointer;
-    border: none;
-    box-shadow: 5px 5px 10px black;
-    margin-bottom: 15px;
-}
+
 
 /*Staff*/
 
@@ -110,11 +86,3 @@
     overflow: hidden;
 }
 
-@media screen and (min-width:1024px) {
-    .aboutUs__cont_description{
-        width:60% ;
-        margin: 2rem 0;
-        padding: 0 2rem;
-        border-radius: 5px;
-    }
-}
