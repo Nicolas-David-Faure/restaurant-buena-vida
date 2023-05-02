@@ -17,7 +17,7 @@ const FoodCategory =({ comeBack })=>{
     
     
     const enterList =(e)=>{
-
+        
         if(e.target.tagName ==  'DIV'){
             setActiveList(true)
         }

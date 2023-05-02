@@ -1,6 +1,6 @@
 const pastas = [
              {name : "Lasagna de carne",
-             precio: "$35", salsas: 'Boloñesa / Blanca',
+             precio: "$200", salsas: 'Boloñesa / Blanca',
              ingredientes: "Carne, queso, cebolla, jamon, huevo, morron" ,
              img:'src/assets/imagenes/pastas/lasagna-carne.jpg'
              },
@@ -20,7 +20,7 @@ const pastas = [
             img: "src/assets/imagenes/pastas/capeletini.jpg"
             
                 },
-            {name : "ñoquis",
+            {name : "Ñoquis",
             precio: "$35", salsas: 'Boloñesa / Blanca',
             ingredientes: "papa, carne " ,
             img: "src/assets/imagenes/pastas/noquis.jpg"

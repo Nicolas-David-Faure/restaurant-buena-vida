@@ -18,6 +18,7 @@ const MenuDetailsFood =({ name , indexType , activeList })=>{
             <ul className="menu-details__ul">
                 
             {activeList ? objetos.map((comida, index)=>{
+               
                 return(
                  <DetailsFood
                      key={comida.name} 

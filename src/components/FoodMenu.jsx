@@ -9,15 +9,11 @@ import { useState  } from "react"
 
 const FoodMenu =()=>{
     const [showCategory ,setShowCategory] = useState("");
-    
-   
-    
     //Si el evento es llamado y el id de algun componente coincide con el string del if/else 
     //Setea el componente A o B
     //Este componente pasa un prop con una funcion para volver atras
    const handleClick=(e)=>{
     const targetID = e.target.id;
-  
     if(targetID == "menu_food"){
       setShowCategory(<FoodCategory  comeBack={comeBack} />)
     }else if(targetID == "menu_drinks"){

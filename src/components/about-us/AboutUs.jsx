@@ -4,21 +4,49 @@ import AboutUsStaff from './AboutUsStaff'
 import personal from '../../data/staff.js'
 import descriptionAboutus from '../../data/descriptionAboutUs.js'
 import AboutUsLocation from './AboutUsLocation'
-
 import { motion , AnimatePresence  } from 'framer-motion'
 import arrowUp  from '../../assets/svg/arrow-up.svg'
 import  arrowDown from '../../assets/svg/arrow-down.svg'
+const showDescriptionVariants = {
+  open:{
+    display:"flex",
+    opacity:[0,0.3,0.5,0.8,1],
+    y:[100,75,50,25,0],
+      transition:{
+        duration:1,
+        type: "spring",
+        bounce:0.5
+     }},
+  closed:{
+    display:"none",
+    opacity:0,
+      transition:{
+        duration: 1,
+        type: "spring",
+        bounce:0.5,
+     }}}
 
+     const animateBtn = {
+      open:{
+        opacity:1,
+        y: 0,
+        transition:{
+        duration:.5
+      },
+      close:{
+        opacity:0,
+        y:200
+      }
+     }}
 const AboutUs = () => {
   const descriptionRef = useRef()
   const [conunterDescripcionIndex, setCounterDescriptionIndex] = useState(0) 
-  const [ countIndexStaff,setCountIndexStaff] = useState(0)
+  const [countIndexStaff,setCountIndexStaff] = useState(0)
   const [displayDescription, setDisplayDescription] = useState(false)
   const [displayStaff, setDisplayStaff] = useState(false)
   const [displayLocation , setDisplayLocation] = useState(false)
  
   const iterateIndexStaff=()=>{
-   
       setCountIndexStaff((prev)=>{
         if(countIndexStaff < 5){
          return prev + 1
@@ -28,8 +56,6 @@ const AboutUs = () => {
       })  
   
   }
-
-  
  const sumCounterDescriptionIndex =()=>{
   if(conunterDescripcionIndex < 3){
     setCounterDescriptionIndex(conunterDescripcionIndex +1)
@@ -38,43 +64,21 @@ const AboutUs = () => {
     setCounterDescriptionIndex(0)
   }
  } 
-  
- const showDescriptionVariants = {
-  open:{
-    display:"flex",
-    opacity:1,
-    y:0,
-      transition:{
-        duration: 1,
-        type: "spring",
-        bounce:0.5
-     }},
-  closed:{
-    opacity:0,
-    y:100,
-      transition:{
-        duration: 1,
-        type: "spring",
-        bounce:0.5,
-     }}}
-  
 
   return (
     <section className='AboutUs'>
       <div className='aboutUs__cont_title'>
         <h2>Sobre nosotros</h2>
       </div>
-      <div className='AboutUs__title_description' onClick={()=>setDisplayDescription(()=>!displayDescription)} >
+      <div className='AboutUs__title_description'
+       onClick={()=>setDisplayDescription(()=>!displayDescription)} >
         <h2>Descripcion</h2><img src={displayDescription ? arrowUp : arrowDown}/>
       </div>
  
       <motion.div
       ref={descriptionRef} 
       layout
-      initial={{
-        opacity: 0,
-        y:"-100px"
-      }}
+     
       animate={displayDescription ? "open" : "closed"}
       variants={showDescriptionVariants}
      
@@ -84,10 +88,19 @@ const AboutUs = () => {
             {descriptionAboutus[conunterDescripcionIndex] /*se toma el array descriptionAboutus y se lo itera manualmente mediante el boton siguiente*/ }
         </p>
         
-          
-          <button onClick={sumCounterDescriptionIndex} 
+      
+          <motion.button
+
+          initial={{y:100}}
+           whileHover={{
+            backgroundColor:"#cb9357",
+            scale:1.02
+          }}
+           animate={displayDescription ? "open" : "close"}
+          variants={animateBtn}
+          onClick={sumCounterDescriptionIndex} 
           className='aboutUs__description_button'>{conunterDescripcionIndex === 3 ?"Volver" : "Siguiente"}
-          </button>
+          </motion.button>
      
       
       </motion.div>

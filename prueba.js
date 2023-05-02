@@ -54,3 +54,29 @@ function multiplicarDigitos(numero) {
 // Ejemplo de uso
 const numero = 39;
 console.log(multiplicarDigitos(numero)); // Devuelve 2*/
+
+/*
+const convertToFormatHour=(seconds)=>{
+  let hours = (Math.floor(seconds / 3600)).toString();
+  let minutes = (Math.floor(seconds / 60)%60).toString();
+  let second = (Math.floor(seconds % 60)).toString();
+  return `
+  ${(hours.length == 2? hours : "0"+hours)}:${(minutes.length== 2? minutes :"0"+minutes)}:${(second.length ==2 ? second : "0"+second)}`;
+}
+
+console.log(convertToFormatHour(0))*/
+
+
+
+//Hora - 3600 segundos es una hora
+//Minutos - 60 segundos es un minuto - 
+
+
+const convertToAFormatHour =(totalSeconds)=>{
+  let hours = Math.floor(totalSeconds / 3600).toString()
+  let minutes = (Math.floor(totalSeconds / 60)%60).toString()
+  let seconds = (totalSeconds % 60).toString()
+  return `${hours.length == 2 ? hours : "0"+hours}:${minutes.length == 2 ? minutes : "0"+minutes}:${seconds.length == 2 ? seconds : "0"+seconds}`
+}
+
+console.log(convertToAFormatHour(8000))
