@@ -38,8 +38,6 @@ const AboutUsDescription = () => {
             {descriptionAboutus[conunterDescripcionIndex] 
             /*se toma el array descriptionAboutus y se lo itera manualmente mediante el boton siguiente*/}
         </p>
-        
-      
           <motion.button 
           whileTap={{
             scale:1.01
