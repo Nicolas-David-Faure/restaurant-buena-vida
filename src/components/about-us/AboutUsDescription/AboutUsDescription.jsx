@@ -3,7 +3,7 @@ import { useState } from 'react'
 import { motion } from 'framer-motion'
 
 //Data
-import descriptionAboutus from '../../data/descriptionAboutUs.js'
+import descriptionAboutus from '../../../data/descriptionAboutUs.js'
 //assets
 import '../../assets/css/about-us/aboutUsDescription.css'
 const AboutUsDescription = () => {
@@ -19,19 +19,21 @@ const AboutUsDescription = () => {
   return (
     <motion.div
       layout
+      initial={{
+        opacity:0,
+        y:0
+      }}
       animate={{
         display:"flex",
-        opacity:[0,0.3,0.5,0.8,1],
-        y:[-100,-75,-50,-25,0],
+        opacity:1,
+        y:0,
         transition:{
           duration:1,
           type: "spring",
-          bounce:0.5
+          
        }
     }}
-     
       className='aboutUs__cont_description'>
-
         <p>
             {descriptionAboutus[conunterDescripcionIndex] 
             /*se toma el array descriptionAboutus y se lo itera manualmente mediante el boton siguiente*/}

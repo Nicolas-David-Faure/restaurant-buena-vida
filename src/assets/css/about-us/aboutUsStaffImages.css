@@ -1,0 +1,40 @@
+.AboutUsStaffImages{
+    width: 350px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 30px;
+    background-color: rgba(0, 0, 0, 0.52);
+    padding: 15px 10px;
+    border-radius: 5x;
+}
+.AboutUsStaff__cont-img{
+    height: 60%;
+    width: 90%;
+    overflow: hidden;
+}
+.AboutUsStaffImages img{
+   width:100%;
+   border-radius: 5px; 
+   opacity: .8;
+}
+.AboutUsStaffImages h4{
+    color: white;
+    font-size: 1.5rem;
+    margin: 0;
+    margin-top: 10px;
+    background-color: rgba(139, 39, 39, 0.46);
+    padding: 0 5rem;
+    border-radius:5px;
+    box-shadow: 5px 5px 15px black;
+}
+.AboutUsStaffImages p{
+    font-size: 1.3rem;
+    color: rgba(255, 255, 255, 0.705);
+    background-color: transparent;
+    box-shadow: none;
+    margin: 10px 0;
+    padding: 0;
+    box-shadow:none;
+}

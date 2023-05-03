@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from 'react'
-import '../../assets/css/about-us/aboutUsStaff.css'
 import { motion , AnimatePresence, useMotionValue, useTransform  } from 'framer-motion'
-const AboutUsStaff = ( { personal }) => {
-  
- 
 
+//css
+import '../../../assets/css/about-us/aboutUsStaffImages.css'
+const AboutUsStaffImages = ( { personal }) => {
+  
   return (
 <AnimatePresence>
     <motion.div 
@@ -13,7 +13,7 @@ const AboutUsStaff = ( { personal }) => {
     initial={{ opacity: 0 }}
     animate={{ opacity: 1 }}
     exit={{ opacity: 0 }}
-    className='AboutUsStaff'>
+    className='AboutUsStaffImages'>
       <div className='AboutUsStaff__cont-img'>
         <img src={personal.src} alt="" />
       </div>
@@ -27,4 +27,4 @@ const AboutUsStaff = ( { personal }) => {
   )
 }
 
-export default AboutUsStaff
+export default AboutUsStaffImages
