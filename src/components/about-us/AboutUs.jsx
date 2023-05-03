@@ -1,8 +1,8 @@
 import React, {  useState } from 'react'
 import { motion } from 'framer-motion'
 //components
-import AboutUsDescription from './AboutUsDescription'
-import AboutUsLocation from './AboutUsLocation'
+import AboutUsDescription from './AboutUsDescription/AboutUsDescription'
+import AboutUsLocation from './AboutUsLocation/AboutUsLocation'
 import AboutUsStaff from './AboutUsStaff/AboutUsStaff'
 //Data
 

@@ -1,8 +1,7 @@
 .aboutUs__cont_description{
 
     height: 90%; 
-    background: rgb(87,47,44);
-    background: linear-gradient(0deg, rgba(87, 47, 44, 0.566) 9%, rgba(219, 87, 67, 0.459) 83%);
+    background: linear-gradient(0deg, rgba(87, 47, 44, 0.32) 9%, rgba(180, 43, 22, 0.608) 83%);
     display: flex;
     flex-direction: column;
     align-items: center;

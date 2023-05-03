@@ -43,11 +43,18 @@ const AboutUsStaff = () => {
            {<AboutUsStaffImages personal={personal[countIndexStaff]}/>}
         </div> 
 
-        <button 
+        <motion.button
+        whileTap={{
+            scale:1.01
+        }}
+        whileHover={{
+            backgroundColor:"#cb9357",
+            scale:1.02
+          }} 
         className="aboutUs__description_button" 
         onClick={iterateIndexStaff}>
           {countIndexStaff < 5 ? "Siguiente" : "Volver"}
-        </button>
+        </motion.button>
         
       </motion.div>
   )

@@ -5,7 +5,7 @@ import { motion } from 'framer-motion'
 //Data
 import descriptionAboutus from '../../../data/descriptionAboutUs.js'
 //assets
-import '../../assets/css/about-us/aboutUsDescription.css'
+import '../../../assets/css/about-us/aboutUsDescription.css'
 const AboutUsDescription = () => {
     const [conunterDescripcionIndex, setCounterDescriptionIndex] = useState(0) 
     const sumCounterDescriptionIndex =()=>{
@@ -21,7 +21,7 @@ const AboutUsDescription = () => {
       layout
       initial={{
         opacity:0,
-        y:0
+        y:-100
       }}
       animate={{
         display:"flex",
@@ -40,15 +40,16 @@ const AboutUsDescription = () => {
         </p>
         
       
-          <motion.button   
-          initial={{y:-100}}
+          <motion.button 
+          whileTap={{
+            scale:1.01
+        }}  
           whileHover={{
             backgroundColor:"#cb9357",
             scale:1.02
           }}
            animate={{
                 opacity:1,
-                y: 0,
                 transition:{
                 duration:.5
               }
@@ -56,8 +57,6 @@ const AboutUsDescription = () => {
           onClick={sumCounterDescriptionIndex} 
           className='aboutUs__description_button'>{conunterDescripcionIndex === 3 ?"Volver" : "Siguiente"}
           </motion.button>
-     
-      
       </motion.div>
   )
 }
