@@ -71,7 +71,7 @@ console.log(convertToFormatHour(0))*/
 //Hora - 3600 segundos es una hora
 //Minutos - 60 segundos es un minuto - 
 
-
+/*
 const convertToAFormatHour =(totalSeconds)=>{
   let hours = Math.floor(totalSeconds / 3600).toString()
   let minutes = (Math.floor(totalSeconds / 60)%60).toString()
@@ -79,4 +79,4 @@ const convertToAFormatHour =(totalSeconds)=>{
   return `${hours.length == 2 ? hours : "0"+hours}:${minutes.length == 2 ? minutes : "0"+minutes}:${seconds.length == 2 ? seconds : "0"+seconds}`
 }
 
-console.log(convertToAFormatHour(8000))
+console.log(convertToAFormatHour(8000))*/
