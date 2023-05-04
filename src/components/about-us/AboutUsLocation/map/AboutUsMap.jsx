@@ -14,7 +14,9 @@ const AboutUsMap = () => {
         y:0,
         opacity:1,
         transition:{
-          duration:1
+          duration:0.9,
+          type:"spring",
+          bounce:0.5
         }
       }} 
       className='aboutUsMap__container'>

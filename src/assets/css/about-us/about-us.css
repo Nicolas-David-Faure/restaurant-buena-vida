@@ -29,7 +29,7 @@
     height: 2.5rem;
     color: var(--colorText);
     background: rgb(171,22,22);
-    background: linear-gradient(0deg, rgba(171,22,22,1) 15%, rgba(70,6,6,1) 85%);
+    background: linear-gradient(0deg, rgba(171,22,22,1) 15%, rgb(116, 9, 9) 85%);
     display: flex;
     justify-content: center;
     cursor: pointer;

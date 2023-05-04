@@ -1,0 +1,16 @@
+.contact__cont_social{
+    margin-top: 5px;
+    width: 95%;
+    
+    background: rgb(37,29,29);
+background: linear-gradient(0deg, rgba(37,29,29,1) 5%, rgb(99, 60, 60) 90%);
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-around;
+    box-shadow: 5px 5px 15px black;
+}
+.contact_social{
+height: 5rem;
+width: 5rem;
+cursor: pointer;
+}
