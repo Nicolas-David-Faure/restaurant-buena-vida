@@ -25,23 +25,48 @@
 .AboutUs__cont_staff_description{
     width: 100%;
     display: flex;
-    cursor: grab;
+    
     height: 350px;
     overflow: hidden;
     justify-content: center;
     align-items: center;
 }
+@media screen and (min-width:220px) {
+    .AboutUs__cont_staff p{
+        font-size: 1.12rem;
+    }
+    .AboutUs__cont_staff{
+        width: 92%;
+        margin: 1rem 0 0.5rem;
+    }
+    
+}
+@media screen and (min-width:412px) {
+    .AboutUs__cont_staff p{
+        font-size: 1.1rem;
+    }
+    
+    }
+    @media screen and (min-width:568px) {
+        .AboutUs__cont_staff{
+            width: 80%;
+        }
+    }
 
-
-
-
+@media screen and (min-width:712px) {
+    .AboutUs__cont_staff p{
+        font-size: 1.1rem;
+    }
+    .AboutUs__cont_staff{
+        width: 70%;
+    }
+    
+}
 @media screen and (min-width:1024px) {
     .AboutUs__cont_staff p{
         font-size: 1.1rem;
     }
     .AboutUs__cont_staff{
-        width: 50%;
-        margin: 2rem 0;
+        width: 60%;
     }
-    
 }

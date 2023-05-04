@@ -1,13 +1,13 @@
 .aboutUsMap__container{
-    width: 95%;
+    width: 92%;
     border-radius: 5px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-   
     background: rgb(87,47,44);
-    background: linear-gradient(0deg, rgba(87,47,44,1) 9%, rgba(219,86,67,1) 83%);
+    background: linear-gradient(0deg, rgba(87, 47, 44, 0.32) 9%, rgba(180, 43, 22, 0.608) 83%);
+    box-shadow: 5px 5px 10px black;
 }
 
 .aboutUsMap__container_title{
@@ -42,4 +42,31 @@
     border-radius: 5px;
     margin:1rem 0 3rem 0 ;
     box-shadow: 2px 2px 10px black; 
+}
+@media screen and (min-width:468px) {
+    .aboutUsMap__container{
+        width: 92%;
+    }
+    .aboutUsMap__map{
+        height: 300px;
+    }
+    
+}
+@media screen and (min-width:650px) {
+    .aboutUsMap__container{
+        width: 85%;
+    }
+}
+@media screen and (min-width:768px) {
+    .aboutUsMap__container{
+        width: 80%;
+    }
+.aboutUsMap__map{
+        height: 400px;
+    }
+}
+@media screen and (min-width:1024px) {
+    .aboutUsMap__container{
+        width: 60%;
+    }
 }

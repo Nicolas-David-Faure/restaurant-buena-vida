@@ -15,6 +15,7 @@
  
 }
 .aboutUs__cont_title h2{
+    
     font-family: 'Lora', serif;
     color: var(--colorText);
     font-size: 2rem;
@@ -22,6 +23,7 @@
     user-select:none ;
 }
 .AboutUs__title_description{
+  
     width: 97%;
     margin-top: 1rem;
     height: 2.5rem;
@@ -32,23 +34,28 @@
     justify-content: center;
     cursor: pointer;
     box-shadow: 5px 5px 10px black;
+    user-select: none;
+    transition: ease-in all 0.1s;
 }
 .AboutUs__title_description:nth-child(3){
     background: rgb(226,80,80);
     background: linear-gradient(0deg, rgb(204, 33, 33) 15%, rgba(171,22,22,1) 70%);
     width: 94%;
 }
-.AboutUs__title_description:nth-child(5){
+.AboutUs__title_description:nth-child(4){
     background: rgb(251,119,119);
-background: linear-gradient(0deg, rgb(220, 54, 54) 15%, rgb(204, 33, 33) 70%);
+    background: linear-gradient(0deg, rgb(220, 54, 54) 15%, rgb(204, 33, 33) 70%);
     width: 92%;
-  
+}
+.AboutUs__title_description > h2{
+    margin-left: 20px;
+}
+.AboutUs__title_description:hover{
+    opacity: 0.8;
+    scale: 1.01;
 }
 .AboutUs__title_description img {
     width: 3rem;
 }
 
-
-
-/*Staff*/
 

@@ -35,8 +35,6 @@ const AboutUsStaff = () => {
           <p>En La Buena Vida creemos que nuestro equipo de trabajo es la clave de nuestro éxito y nos enorgullece presentarlos. 
           Conoce a las personas que hacen posible que cada platillo que servimos 
           sea una obra de arte culinaria y cada experiencia en nuestro restaurante sea inolvidable.</p>
-       
-
         <div 
           id='AboutUs__cont_staff_description'
           className='AboutUs__cont_staff_description'> 

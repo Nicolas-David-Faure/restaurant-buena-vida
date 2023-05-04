@@ -12,6 +12,7 @@ import  arrowDown from '../../assets/svg/arrow-down.svg'
 import '../../assets/css/about-us/about-us.css'
 
 
+
 const AboutUs = () => {
   
   const [displayDescription, setDisplayDescription] = useState(false)
@@ -20,42 +21,36 @@ const AboutUs = () => {
  
   
   return (
-    <section className='AboutUs'>
+    <section 
+      
+    className='AboutUs'>
       <div className='aboutUs__cont_title'>
         <h2>Sobre nosotros</h2>
       </div>
       {/*When the div AboutUs__title_description the component AboutUsDescription is rendered*/}
-      <div className='AboutUs__title_description'
-       onClick={()=>setDisplayDescription(()=>!displayDescription)} >
-        <h2>Descripcion</h2>
-        <img src={displayDescription ? arrowUp : arrowDown}/>
+      <div
+        className='AboutUs__title_description'
+        onClick={()=>setDisplayDescription(()=>!displayDescription)} >
+          <h2>Descripcion</h2>
+          <img src={displayDescription ? arrowUp : arrowDown}/>
       </div>
-          {displayDescription ? <AboutUsDescription /> : undefined}
-
-
-      {/*When the div AboutUs__title_description the component AboutUsDescription is rendered*/}
-      <div className='AboutUs__title_description' 
-      onClick={()=>setDisplayStaff(()=>!displayStaff)} >
-        <h2>Personal</h2>
-        <img src={displayStaff ? arrowUp : arrowDown}/>
+        {displayDescription ? <AboutUsDescription /> : undefined}
+        {/*When the div AboutUs__title_description the component AboutUsDescription is rendered*/}
+      <div
+        
+        className='AboutUs__title_description' 
+        onClick={()=>setDisplayStaff(()=>!displayStaff)} >
+          <h2>Personal</h2>
+          <img src={displayStaff ? arrowUp : arrowDown}/>
       </div>
-     {displayStaff ? <AboutUsStaff /> : undefined}
-     
-      <div 
-      className='AboutUs__title_description' 
-      onClick={()=>setDisplayLocation(()=>!displayLocation)}>
-        <h2>Ubicación</h2>
-        <img src={displayLocation ? arrowUp : arrowDown}/>
+     {displayStaff ? <AboutUsStaff /> : undefined}    
+      <div
+        className='AboutUs__title_description' 
+        onClick={()=>setDisplayLocation(()=>!displayLocation)}>
+          <h2>Ubicación</h2>
+          <img src={displayLocation ? arrowUp : arrowDown}/>
       </div>
-      <div 
-      style={
-        displayLocation ?
-        {display: "flex"} :
-        {display:"none"}
-        } 
-          className='AboutUs__cont_location'>
-          <AboutUsLocation />
-      </div>
+        {displayLocation ? <AboutUsLocation /> : undefined} 
     </section>
   )
 }
