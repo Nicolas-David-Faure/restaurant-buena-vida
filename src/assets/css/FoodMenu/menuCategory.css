@@ -1,15 +1,10 @@
 .cont_category{
-
-   
     width: 100%;
-  
     min-height: 100vh;
     background-color: var(--color2);
-
     display: flex;
     flex-direction: column;
     align-items: center;
-  
 }
 /*Button*/
 .category_btn_back{
@@ -112,14 +107,14 @@
 
 /*DRINKS CATEGORY*/
 .li__vinos{
-    background-image: url('src/assets/imagenes/drinks/vinos.jpg');
+    background-image: url('.../.../imagenes/drinks/vinos.jpg');
 }
 .li__cervezas{
-     background-image: url('src/assets/imagenes/drinks/beer.jpg');
+     background-image: url('.../.../imagenes/drinks/beer.jpg');
 }
 .li__tragos{
-     background-image: url('src/assets/imagenes/drinks/martini.jpg');
+     background-image: url('.../.../imagenes/drinks/martini.jpg');
 }
 .li__gaseosas{
-     background-image: url('src/assets/imagenes/drinks/gaseosa.png');    
+     background-image: url('.../.../imagenes/drinks/gaseosa.png');    
 }

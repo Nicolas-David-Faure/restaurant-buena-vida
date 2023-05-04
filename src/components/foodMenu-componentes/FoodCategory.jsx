@@ -13,9 +13,6 @@ const FoodCategory =({ comeBack })=>{
     const [indexFood, setIndexFood] = useState(0)
     const [activeList, setActiveList] = useState(false)
 
-
-    
-    
     const enterList =(e)=>{
         
         if(e.target.tagName ==  'DIV'){
