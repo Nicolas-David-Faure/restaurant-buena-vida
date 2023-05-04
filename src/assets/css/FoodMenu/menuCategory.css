@@ -107,14 +107,14 @@
 
 /*DRINKS CATEGORY*/
 .li__vinos{
-    background-image: url('.../.../imagenes/drinks/vinos.jpg');
+    background-image: url('../../imagenes/drinks/vinos.jpg');
 }
 .li__cervezas{
-     background-image: url('.../.../imagenes/drinks/beer.jpg');
+     background-image: url('../../imagenes/drinks/beer.jpg');
 }
 .li__tragos{
-     background-image: url('.../.../imagenes/drinks/martini.jpg');
+     background-image: url('../../imagenes/drinks/martini.jpg');
 }
 .li__gaseosas{
-     background-image: url('.../.../imagenes/drinks/gaseosa.png');    
+     background-image: url('../../imagenes/drinks/gaseosa.png');    
 }
