@@ -8,7 +8,7 @@ const DetailsFood =( {name , price, salsa, ingredientes , src} )=>{
 
 
 
-   
+    console.log(src)
    
     return (
         <motion.div
@@ -16,7 +16,7 @@ const DetailsFood =( {name , price, salsa, ingredientes , src} )=>{
                 initial={{ opacity: 0, scale: 0.9 }}
                 animate={{ opacity: 1, scale: 1 }}
                 transition={{ duration: 0.2 }}
-                style={divBackground}
+                style={{backgroundImage:'url('+src+')'}}
                 className='details__cont'> 
             <div className='details__cont-2'>
             <h2  className='details__name'>{name}</h2>

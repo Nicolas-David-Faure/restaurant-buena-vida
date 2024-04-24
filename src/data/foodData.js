@@ -1,137 +1,169 @@
+//pastas
+import lasagnaCarne from '../assets/imagenes/pastas/lasagna-carne.jpg'
+import lasagnaVerdura from '../assets/imagenes/pastas/lasagna-verdura.jpg'
+import spaguetti from '../assets/imagenes/pastas/spaguetti.jpg'
+import capeletini from '../assets/imagenes/pastas/capeletini.jpg'
+import noquis from '../assets/imagenes/pastas/noquis.jpg'
+//carnes
+import bife from '../assets/imagenes/carnes/bife.jpg'
+import asado from '../assets/imagenes/carnes/asado.jpg'
+import cordero from '../assets/imagenes/carnes/cordero.jpg'
+import chivo from '../assets/imagenes/carnes/chivo.jpg'
+import cerdo from '../assets/imagenes/carnes/cerdo.jpg'
+//pizzas
+import napolitana from '../assets/imagenes/pizzas/napolitana.jpg'
+import fugazzeta from '../assets/imagenes/pizzas/pizza-fugazzeta.jpg'
+import cuatroQuesos from '../assets/imagenes/pizzas/cuatro-quesos.jpg'
+import calabresa from '../assets/imagenes/pizzas/calabresa.jpg'
+import aCaballo from '../assets/imagenes/pizzas/pizza-a-caballo.jpg'
+//sanguches
+import burguer from '../assets/imagenes/sanguches/burguer.jpg'
+import lomito from '../assets/imagenes/sanguches/lomito.jpg'
+import sandwichDeBondiola from '../assets/imagenes/sanguches/sandwich-de-bondiola.jpg'
+import sandwichDeMilanesa from '../assets/imagenes/sanguches/Sandwich-de-Milanesa.jpg'
+import choripan from '../assets/imagenes/sanguches/choripan.jpg'
+//postres
+import torta from '../assets/imagenes/postres/torta-chocolate.jpg'
+import flan from '../assets/imagenes/postres/flan-light.jpg'
+import tartaOreo from '../assets/imagenes/postres/tarta_de_oreo.jpg'
+import helado from '../assets/imagenes/postres/helado.jpg'
+import cheesecake from '../assets/imagenes/postres/cheesecake.jpg'
+
+
 const pastas = [
              {name : "Lasagna de carne",
              precio: "$200", salsas: 'Boloñesa / Blanca',
              ingredientes: "Carne, queso, cebolla, jamon, huevo, morron" ,
-             img:'../../assets/imagenes/pastas/lasagna-carne.jpg'
+             img: lasagnaCarne
              },
             {name : "Lasagna de verduras",
             precio: "$30", salsas: 'Boloñesa / Blanca',
             ingredientes: "Espinaca, queso, cebolla, acelga,tomate, huevo, morron" ,
-            img: '../../assets/imagenes/pastas/lasagna-verdura.jpg'
+            img: lasagnaVerdura
                 },
             {name : "Spaguetti",
             precio: "$20", salsas: 'Boloñesa / Blanca',
             ingredientes: "queso",
-            img:"../../assets/imagenes/pastas/spaguetti.jpg"
+            img:spaguetti
                 },
             {name : "Capeletini",
             precio: "$35", salsas: 'Boloñesa / Blanca',
             ingredientes: " jamon, huevo, morron, queso" ,
-            img: "../../assets/imagenes/pastas/capeletini.jpg"
+            img: capeletini
             
                 },
             {name : "Ñoquis",
             precio: "$35", salsas: 'Boloñesa / Blanca',
             ingredientes: "papa, carne " ,
-            img: "../../assets/imagenes/pastas/noquis.jpg"
+            img: noquis
          }]
   
  const carnes =[
                 {name : "Bife",
                 precio: "$35", salsas: 'Boloñesa / Blanca',
                  ingredientes: "Carne, queso, cebolla, jamon, huevo, morron",
-                 img: "../../assets/imagenes/carnes/bife.jpg"
+                 img: bife
                  },
                 {name : "Asado",
                 precio: "$30", salsas: 'Boloñesa / Blanca',
                 ingredientes: "spinaca, queso, cebolla, acelga,tomate, huevo, morron",
-                img: "../../assets/imagenes/carnes/asado.jpg"
+                img:  asado
                     },
                 {name : "Cordero",
                 precio: "$20", salsas: 'Boloñesa / Blanca',
                 ingredientes: "queso",
-                img: "../../assets/imagenes/carnes/cordero.jpg"
+                img: cordero
                     },
                 {name : "chivo",
                 precio: "$35", salsas: 'Boloñesa / Blanca',
                 ingredientes: " jamon, huevo, morron, queso",
-                img: "../../assets/imagenes/carnes/chivo.jpg"
+                img: chivo
                     },
                 {name : "cerdo",
                 precio: "$35", salsas: 'Boloñesa / Blanca',
                 ingredientes: "papa, carne ",
-                img: "../../assets/imagenes/carnes/cerdo.jpg"
+                img: cerdo
              }];
           
 const pizzas =[
                   {name : "Napolitana",
                  precio: "$35", salsas: 'Boloñesa / Blanca',
                  ingredientes: "Carne, queso, cebolla, jamon, huevo, morron" ,
-                 img: "../../assets/imagenes/pizzas/napolitana.jpg"
+                 img: napolitana
                  },
                 {name : "Fugazzeta",
                 precio: "$30", salsas: 'Boloñesa / Blanca',
                 ingredientes: "spinaca, queso, cebolla, acelga,tomate, huevo, morron" ,
-                img: "../../assets/imagenes/pizzas/pizza-fugazzeta.jpg"
+                img:  fugazzeta
                     },
                 {name : "Cuatro Quesos",
                 precio: "$20", salsas: 'Boloñesa / Blanca',
                 ingredientes: "queso" ,
-                img: "../../assets/imagenes/pizzas/cuatro-quesos.jpg"
+                img:  cuatroQuesos
                     },
                 {name : "Calabresa",
                 precio: "$35", salsas: 'Boloñesa / Blanca',
                 ingredientes: " jamon, huevo, morron, queso" ,
-                img: "../../assets/imagenes/pizzas/calabresa.jpg"
+                img:  calabresa
                     },
                 {name : "A Caballo",
                 precio: "$35", salsas: 'Boloñesa / Blanca',
                 ingredientes: "papa, carne " ,
-                img: "../../assets/imagenes/pizzas/pizza-a-caballo.jpg"
+                img:  aCaballo
              }];
       
 const sanguches=[
                 {name : "Hamburguesa Comun / Especial",
                 precio: "$35", salsas: 'Boloñesa / Blanca',
                  ingredientes: "Carne, queso, cebolla, jamon, huevo, morron" ,
-                 img:"../../assets/imagenes/sanguches/burguer.jpg"
+                 img: burguer
                  },
                 {name : "Lomito Con Papas",
                 precio: "$30", salsas: 'Boloñesa / Blanca',
                 ingredientes: "spinaca, queso, cebolla, acelga,tomate, huevo, morron" ,
-                img:"../../assets/imagenes/sanguches/lomito.jpg"
+                img:  lomito
                     },
                 {name : "Sanguche de Bondiola",
                 precio: "$20", salsas: 'Boloñesa / Blanca',
                 ingredientes: "queso" ,
-                img:"../../assets/imagenes/sanguches/sandwich-de-bondiola.jpg"
+                img:  sandwichDeBondiola
                     },
                 {name : "Sanguche De Milanesa",
                 precio: "$35", salsas: 'Boloñesa / Blanca',
                 ingredientes: " jamon, huevo, morron, queso" ,
-                img:"../../assets/imagenes/sanguches/Sandwich-de-Milanesa.jpg"
+                img:  sandwichDeMilanesa
                     },
                 {name : "Choripan",
                 precio: "$35", salsas: 'Boloñesa / Blanca',
                 ingredientes: "papa, carne " ,
-                img:"../../assets/imagenes/sanguches/choripan.jpg"
+                img:  choripan
              }];
        
 const postres = [ 
                 {name : "Torta",
                 precio: "$35", salsas: '...',
                  ingredientes: "..." ,
-                 img: "../../imagenes/postres/torta-chocolate.jpg"
+                 img:   torta
                  },
                 {name : "Flan",
                 precio: "$30", salsas: '...',
                 ingredientes: "..." ,
-                img: "../../imagenes/postres/flan-light.jpg"
+                img:  flan
                     },
                 {name : "Tarta Oreo",
                 precio: "$20", salsas: '...',
                 ingredientes: "..." ,
-                img: "../../imagenes/postres/tarta_de_oreo.jpg"
+                img:  tartaOreo
                     },
                 {name : "Helado",
                 precio: "$35", salsas: '...',
                 ingredientes: "..." ,
-                img: "../../imagenes/postres/helado.jpg"
+                img:  helado
                     },
                 {name : "Chease Cake",
                 precio: "$35", salsas: '...',
                 ingredientes: "..." ,
-                img: "../../imagenes/postres/cheesecake.jpg"
+                img:  cheesecake
              }];
         
 

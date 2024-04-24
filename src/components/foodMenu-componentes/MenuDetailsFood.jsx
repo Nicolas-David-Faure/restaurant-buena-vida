@@ -2,6 +2,8 @@ import { useEffect, useState } from "react"
 import comidaSelect from "../../data/foodData.js"
 import DetailsFood from "./DetailsFood.jsx";
 import '../../assets/css/FoodMenu/Details/details.css'
+
+
 const MenuDetailsFood =({ name , indexType , activeList })=>{
     let objetos = [];
   
